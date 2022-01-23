@@ -1,0 +1,587 @@
+/*Tekijä Karina Raikula*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ohjebutton {
+    display: inline-block;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Karla';
+    transition: background 0.5s;
+}
+
+.ohjebutton:hover {
+    background: #00008B;
+
+}
+
+/*-----------Navbar------------*/
+
+.logokuva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    border-bottom: 2px solid black;
+    min-width: 100%;
+    background-color: #ffffff;
+}
+
+.logokuva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    max-width: 100%;
+    height: auto;
+}
+
+.menupalkki {
+    width: 100%;
+}
+
+.menupalkki ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.menupalkki li {
+    margin-bottom: 10px;
+}
+
+.menupalkki li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menupalkki a {
+    display: inline-block;
+    color: #000;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 2vh;
+}
+
+.menupalkki a:after {
+    content: "";
+    display: flex;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.menupalkki a:hover {
+    background: #16223d;
+    color: #ffffff;
+}
+
+.menupalkki a:hover::after {
+    width: 100%;
+}
+
+/*--------*/
+
+/*----------------------- Aloittelija-osion yhteiset tyylit ------------------------*/
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+.slogan {
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    background: linear-gradient(rgb(200, 200, 200), rgb(255, 255, 255));
+    padding: 25px 25px 25px 25px;
+    border-top: 1px solid #8a8a8a;
+}
+
+
+.slogantext {
+    margin: 0;
+    width: 80%;
+    font-size: 26px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slogantext p {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+.slogantext h2 {
+    font-size: 26px;
+    font-family: 'Karla', sans-serif;
+}
+
+.dots {
+    margin-bottom: 20px;
+}
+
+
+/**/
+/*-------*/
+
+/*---------------- Aloittelijoille - pääsivu--------------------------*/
+
+
+#aloittelijaheader {
+    padding-bottom: 200px;
+    background-size: cover;
+    height: 500px;
+}
+
+
+/* Teksti kategorioiden päällä */
+
+.aloittelijalaskettelu {
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+.aloittelijalaskettelu h3 {
+    font-size: 26px;
+    font-family: 'Karla', sans-serif;
+}
+
+.caption {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+
+.caption h3 {
+    width: 100%;
+    margin-left: -10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Karla', sans-serif;
+}
+
+
+#aloittelijalaskettelu_container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.aloittelijalaskettelu h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.aloittelijalaskettelu h3 {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 26px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* ---- */
+
+
+/*------------------Vinkki sivu---------------------*/
+
+
+
+#ohjeet {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Monsterrat', sans-serif;
+    border: 1px solid #ccc;
+    background-color: #dddddd;
+}
+
+.ohjeet {
+    padding-bottom: 10px;
+}
+
+#ohjeet h1 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+}
+
+#ohjeet h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+}
+
+#ohjeet p {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+#ohjeet hr {
+    margin: 20px;
+}
+
+/*----*/
+
+/*-------------------Keskus sivu------------------*/
+
+.keskuscontainer {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .keskuscontainer {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .keskukset {
+        flex-wrap: wrap;
+    }
+}
+
+.keskuscontainer .tabcontent {
+    margin-top: 50px;
+}
+
+.keskukset {
+    display: flex;
+}
+
+
+.keskuscontainer h1 {
+    font-size: 25px;
+    font-family: 'Karla', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.keskuscontainer h2 {
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.keskuscontainer p {
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: 'Monsterrat', sans-serif;
+
+}
+
+.keskukset figure {
+    margin-bottom: 20px;
+
+}
+
+.keskuscontainer hr {
+    width: 100%;
+}
+
+
+/**/
+
+/* ------------------------Yhteystietosivu ------------------------*/
+
+#meistabody {
+    margin: 0;
+    background-image: url("images/Hissi.jpg");
+    background-size: cover;
+}
+
+.myform {
+    padding: 20px;
+    width: 60%;
+    border: 2px solid #8a8a8a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myform .form-group {
+    padding-bottom: 15px;
+}
+
+.myform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.myform input[type="text"] {
+    padding: 8px;
+    width: 80%;
+}
+
+.myform textarea {
+    padding: 8px;
+    padding-bottom: 40px;
+    width: 80%;
+}
+
+.myform input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.myform {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.flex-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#tietoesittely {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #333;
+    color: lightgray;
+    width: 90%;
+    padding: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Karla', sans-serif;
+}
+
+#tietoesittely p {
+    font-size: 20px;
+    text-align: justify-all;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+#tietoesittely h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+#meista h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Footer */
+.yhteys{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 18px;
+}
+
+.info3 h5{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+}
+
+.info3 li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#some {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+#some a {
+    margin-right: 20px;
+}
+
+/* ----------*/
+
+/* ------------------------------Footer---------------------------- */
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#meistarow {
+    margin-top: 0px
+}
+
+.info img {
+    padding-left: 2px;
+}
+
+.info2 img {
+    padding-right: 35px;
+}
+
+.info3 {
+    font-size: 18px;
+}
+
+
+.yhteys {
+    width: 100%;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 18px;
+
+}
+
+.yhteys h6 {
+    color: #fff;
+    margin-bottom: 0px;
+    font-family: 'Karla', sans-serif;
+}
+
+
+h6 {
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+}
+
+h5 {
+    font-size: 22px;
+    font-family: 'Karla', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* -----------*/
+
+
+/*-------------------------TABS-----------------------*/
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs button {
+    width: 33.33%;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    height: 90%;
+    display: none;
+    margin-top: 20px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*------------------Media Query-------------------------------------*/
+@media only screen and (max-width: 800px) {
+    #aloittelijalaskettelu_container figcaption {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #aloittelijalaskettelu_container figcaption {
+        font-size: 14px;
+    }
+
+}
+
+

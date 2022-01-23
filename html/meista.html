@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laskettelukeskus | Meistä</title>
+        <link rel="stylesheet" href="../css/aloittelijastyle.css">
+    </head>
+    <body id="meistabody">
+        <header>
+            <div class="logokuva">
+                <a href="index.html">
+                    <img src="../images/logo1.png" alt="logo" id="logo">
+                </a>
+            </div>
+            <nav class="menupalkki">
+                <ul>
+                    <li>
+                        <a href="keskukset.html" class="">Laskettelukeskukset</a>
+                    </li>
+                    <li>
+                        <a href="aloittelijoille.html">Laskettelusta</a>
+                    </li>
+                    <li>
+                        <a href="varusteet.html">Varusteet</a>
+                    </li>
+                    <li>
+                        <a href="meista.html">Meistä</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!------------Tietoa meistä------------>
+        <section id="meista-background">
+            <div class="flex-container">
+                <article id="tietoesittely" class="tieto">
+                    <h1>Laskettelukeskus.fi </h1>
+                    <p>
+                        Laskettelukeskus.fi on vuonna 2021 perustettu yritys,
+                        jonka tavoitteena on tuoda laskettelu lähelle jokaista kiinnostunutta. Olimme kyllästyneitä
+                        jatkuvaan internetin selailuun ja hyödyllisten sivujen metsästämiseen, joten loimme oman
+                        sivustomme. <br><br>
+                        Halusimme luoda sivuston, josta löytyy kaikki lasketteluun liittyvä yhdestä paketista ja josta
+                        jokainen laskettelija, aloitteleva tai kokenut, hyötyy. Sivustoltamme löydät laajan valikoiman
+                        lasketteluvarusteita, vinkkejä laskettelun aloitteluun, sekä reittiohjeet meidän suosittelemiin
+                        laskettelukeskuksiin! <br><br>
+                        Laskettelu on intohimomme ja toivomme,
+                        että sivustomme avulla sinäkin pääset syvemmälle sisään laskettelun maailmaan!
+                    </p>
+                </article>
+
+                <!-------------FORM--------------------->
+                <h1 id="meista">Ota meihin yhteyttä!</h1>
+                <form class="myform">
+
+                    <div class="form-group">
+                        <label>Nimi: </label>
+                        <input type="text" name="nimi" placeholder="Nimi..">
+                    </div>
+                    <div class="form-group">
+                        <label>Sähköpostiosoite: </label>
+                        <input type="text" name="sposti" placeholder="Sähköpostiosoite..">
+                    </div>
+                    <div class="form-group">
+                        <label>Mitä asiasi koskee? </label>
+                        <textarea name="message" placeholder="Palautteesi on meille tärkeää.."></textarea>
+                    </div>
+                    <input class="button" type="submit" value="Lähetä" name="" id="lomakenappi"
+                           onclick="alert('Kiitos viestistäsi')">
+                </form>
+
+
+            </div>
+            <!------------yhteystiedot + sosiaalinen media---------------------->
+            <footer class="yhteys">
+                <div class="container">
+                    <div class="row">
+                        <div class="info">
+                        </div>
+                        <div class="info3">
+                            <h5>Yhteystiedot ja sosiaalinen media</h5>
+                            <ul>
+                                <li>Asiakaspalvelu: +358 000000001</li>
+                                <li>Sähköposti: asiakkaamme@laskettelukeskus.fi</li>
+                                <li>Instagram: @laskettelukeskus</li>
+                                <li>Twitter: @laskettelukeskus</li>
+                                <li>Facebook: @laskettelukeskus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

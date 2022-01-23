@@ -1,0 +1,323 @@
+<!-- Tekijä Joona Nylander-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Laskettelukeskukset</title>
+        <link rel="stylesheet" href="../css/keskukset.css">
+    </head>
+    <body>
+        <!--- HEADER TÄSTÄ -------->
+        <header>
+            <div class="logokuva">
+                <a href="index.html">
+                    <img src="../images/logo1.png" alt="logo" id="logo">
+                </a>
+            </div>
+            <nav class="menupalkki">
+                <ul>
+                    <li>
+                        <a href="keskukset.html" class="">Laskettelukeskukset</a>
+                    </li>
+                    <li>
+                        <a href="aloittelijoille.html">Laskettelusta</a>
+                    </li>
+                    <li>
+                        <a href="varusteet.html">Varusteet</a>
+                    </li>
+                    <li>
+                        <a href="meista.html">Meistä</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Meidän suosikkimme</h1>
+
+        <section id="suosikit">
+            <article id="ruka" class="keskus">
+                <h2 class="title">Ruka</h2>
+                <p class="caption">Kuusamossa sijaitseva Ruka on yksi Suomen suosituimmista hiihtokeskuksista ja tarjoaa
+                    kaikille laskijoille sopivan haastavia rinteitä, joista pisimmällä on mittaa 1 300 metriä. Rinteitä
+                    on 30 ja hissejä 20, joiden joukossa viisi tuolihissiä ja nopea kuuden hengen kuomullinen
+                    RukaExpress. Voit valita tuulen tai auringon suunnan mukaan laskupaikat ja seikkailla rinteeltä
+                    toiselle.
+                </p>
+                <div class="weather">
+                    <div class="weatherikoni"><img src="images/icons/unknown.png" alt=""></div>
+                    <div class="lampotila"><p></p></div>
+                </div>
+                <button id="ruka-reitti">Reittiohjeet</button>
+                <div id="map-ruka" class="map"></div>
+            </article>
+
+            <article id="levi" class="keskus">
+                <h2 class="title">Levi</h2>
+                <p class="caption">Levi on tunturi Sirkan kylässä Kittilän kunnassa. Levin huippu on 530,3 metriä
+                    merenpinnan yläpuolella. Levi tunnetaan Levin matkailukeskuksesta, joka on Suomen suurin
+                    talviurheilukeskus. Levillä on 43 pituudeltaan ja vaativuudeltaan vaihtelevaa laskettelurinnettä ja
+                    Suomen suurin hiihtokoulu.</p>
+                <div class="weather">
+                    <div class="weatherikoni"><img src="images/icons/unknown.png" alt=""></div>
+                    <div class="lampotila"><p></p></div>
+                </div>
+                <button id="levi-reitti">Reittiohjeet</button>
+                <div id="map-levi" class="map"></div>
+            </article>
+        </section>
+
+        <div class="keskuscontainer">
+
+            <div class="tabs">
+                <button class="tablinks" onClick="openPage(event, 'etela')" id="defaultOpen">Etelä-Suomi</button>
+                <button class="tablinks" onClick="openPage(event, 'keski')">Keski-Suomi</button>
+                <button class="tablinks" onClick="openPage(event, 'pohjois')">Pohjois-Suomi</button>
+
+                <!--------------Etelä-Suomi tabi------------------>
+
+                <section class="tabcontent" id="etela">
+                    <article class="keskukset">
+
+                        <figure>
+                            <img src="../css/images/vihti.jpg" width="300px">
+                            <figcaption class="keskusteksti">
+                                <h2>Vihti Ski Center</h2>
+                                <p>
+                                    Vihti Ski Center on pääkaupunkiseudun suurin laskettelukeskus.
+                                    Täällä viihtyy niin aloittelija, kuin myös kokeneempi laskija.
+                                    Vihti Ski Center panostaa jatkuvasti rinnetoimintoihin ja oheispalveluihin.
+                                    Vihti Skin vuokraamossa on laaja valikoima välineitä ja hyvä suksi-/lautahuolto. On myös
+                                    mahdollista lainata pulkkia ja lumikenkiä.
+                                    Täältä löydät tekemistä koko perheelle.
+                                </p>
+                                <br>
+                                <p class="dots">
+                                    <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 9 kpl
+                                    <br>
+                                    <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/sappee.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Sappeen Laskettelukeskus</h2>
+                            <p>Sappeen laskettelukeskus on rakennettu Sappeenvuorelle jo 80- luvulla.
+                                Nykyään Sappee on nykyaikainen laskettelukeskus, jossa erityisesti lapsiperheet
+                                viihtyvät. Laskettelukeskus sopii mainiosti niin aloittelijoille, kuin
+                                kokeneimmillekkin.
+                                Sappeenvuoren huipulta löytyy Tapahtumakeskus Huippu, joka oli valmistumishetkellään
+                                Suomen suurin rinneravintola.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 4kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 3kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/messlila.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Messilä</h2>
+                            <p>
+                                Messilä on Etelä-Suomen suurimpia hiihtokeskuksia ja erityisen suosittu myös
+                                arki-iltoina.
+                                Messilän rinteet tarjoavat monipuolisesti tekemistä kaikentasoisille laskijoille.
+                                Laskettelukeskusta ympäröivä luonto ja ympäristö ovat maininnan arvoisia. Keltainen
+                                kartano toimii maamerkkinä ja vanhat rakennukset pihapiirissä on kunnostettu keskuksen
+                                käyttöön. Suksivuokraamossa on myös tarjolla huoltopalveluita.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 3kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 2kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+
+                    </article>
+                </section>
+
+                <!--------------Keski-Suomi tabi------------------>
+
+                <section class="tabcontent" id="keski">
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/tahko.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Tahko</h2>
+                            <p>
+                                Tahkon monipuolisesta rinnevalikoimasta löytyy jokaiselle jotakin. Laskettelun
+                                harjoittelu onnistuu parhaiten Lastenrinteen lisäksi Länsirinteiden lyhyissä ja loivissa
+                                rinteissä, kuten Lumilaaksossa sekä eturinteiden Turistirinteessä. Tahko palvelee
+                                laskijoitaan kahdella välinevuokraamolla, suksihuollolla ja hiihtokoululla.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 8kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 10kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/himos.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Himos</h2>
+                            <p>
+                                Himos on helposti tavoitettavissa Etelä- ja Keski-Suomesta. Himoksen monipuolinen
+                                rinnevalikoima tekee tästä laskettleukeskuksesta oivan harjoittelupaikan
+                                kaikentasoisille laskijoille. Himos on koonsa vuoksi suosittu muutaman päivän kohde.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 4kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 4kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/hakarinteet.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Häkärinteet</h2>
+                            <p>
+                                Häkärinteet on oiva kohde aloittelijoille ja lapsille. Rinnevalikoima on laaja ja
+                                jyrkempiä rinteitä löytyy myös, mutta eniten keskus soveltuu aloittelijoille.
+                                Nimipäiväsanrakit laskettelevat Häkärinteillä ilmaiseksi.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 2kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 5kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                </section>
+
+                <!--------------Pohjois-Suomi tabi------------------>
+
+                <section class="tabcontent" id="pohjois">
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/olos.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Olos</h2>
+                            <p>
+                                Olos on viehättävä laskettelukeskus Muoniossa. Samalla lipulla toimiva Pallas on helppo
+                                yhdistää Oloksen vierailuun. Rinteet ja palvelut sijaitsevat tiiviisti ja Olos on
+                                lumivarma jo alkutalvesta. Rinnevalikoima tarjoaa harjoittelutilaa niin aloittelijoilla
+                                kuin myös kokeneimmille harrastelijoille.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 1kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 3kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/ukkohalla.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Ukkohalla</h2>
+                            <p>
+                                Ukkohallan rinteet ovat vierailemisen arvoisia. Sinisissä ja vihreissä rinteissä voi
+                                turvallisesti opetella ja kerrata tarvittavia taitoja ennen vaikeampiin rinteisiin
+                                lähtemistä. Junnuparkissa lapset ja aloittelijat voivat tutustua lasketteluun
+                                turvallisesti. Aloittelijat viihtyvät täällä erityisen hyvin.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 4kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 4kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                    <article class="keskukset">
+                        <figure>
+                            <img src="../css/images/pikkusyote.jpg" width="300px">
+                        </figure>
+                        <figcaption class="keskusteksti">
+                            <h2>Pikku-Syöte</h2>
+                            <p>
+                                Pikku-Syöte on rauhallinen laskettelukeskus luonnon keskellä. Täältä löytyy laskettavaa
+                                koko perheelle. Viiden kilometrin päässä sijaitseva Iso-Syöte on selkeästi isompi, mutta
+                                Pikku-Syöte soveltuu täydellisesti rauhaliseen harjoitteluun.
+                            </p>
+                            <br>
+                            <p class="dots">
+                                <img src="../css/images/green-dot.png" width="11px"> Vihreitä rinteitä: 2kpl
+                                <br>
+                                <img src="../css/images/blue-dot.png" width="10px"> Sinisiä rinteitä: 3kpl
+                                <br>
+                                <img src="../css/images/pink-dot.png" width="10px"> Hiihtokoulu: Kyllä!
+                            </p>
+                        </figcaption>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer class="yhteys">
+            <div class="container">
+                <div class="row">
+                    <div class="info">
+                    </div>
+                    <div class="info3">
+                        <h5>Yhteystiedot ja sosiaalinen media</h5>
+                        <ul>
+                            <li>Asiakaspalvelu: +358 000000001</li>
+                            <li>Sähköposti: asiakkaamme@laskettelukeskus.fi</li>
+                            <li>Instagram: @laskettelukeskus</li>
+                            <li>Twitter: @laskettelukeskus</li>
+                            <li>Facebook: @laskettelukeskus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Javascript tiedostojen haku ja google maps API:n haku -->
+        <script src="../js/aloittelijascript.js"></script>
+        <script src="../js/weather.js"></script>
+        <script src="../js/maps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAERzmj9jYOzjn4B9kpp2K6d9WauvczQnk"
+                async defer></script>
+    </body>
+</html>
